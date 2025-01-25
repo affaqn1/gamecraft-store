@@ -81,7 +81,7 @@ li {
 }
 
 ol {
-    padding: right 5px;
+    padding: 5px;
 }
 
 main {
@@ -106,30 +106,21 @@ main {
     margin: 30px 0;
 }
 
-.menu-icon{
+.menu-icon {
     width: 25px;
     cursor: pointer;
 }
 
-.pagefooter {
-    text-decoration: none;
-    padding: 18px;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-        font-size: 18px;
-    }
-
-    img {
-        width: 80px;
-        height: auto;
-        margin-right: 20px;
-    }
+.pagefooter p {
+    font-size: 18px;
 }
+
+.pagefooter img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
 
 
 /* Navbar Styles (Global) */
@@ -158,7 +149,7 @@ nav.scrolled {
 nav li {
     display: inline-block;
     padding-left: 4px;
-    padding-top: none;
+    padding-top: 0;
 }
 
 nav li .nav-item {
@@ -170,7 +161,7 @@ nav li .nav-item {
     transition: var(--general-transition);
     text-decoration: none;
     font-size: 14px;
-    
+
 }
 
 nav li .nav-item:hover {
@@ -204,6 +195,7 @@ main {
 
 /* Media Query for max-width 450px */
 @media (max-width: 450px) {
+
     /* General Layout Adjustments */
     body {
         font-size: 16px;
@@ -220,15 +212,20 @@ main {
     }
 
     h1 {
-        font-size: 32px; /* Decrease size of header */
+        font-size: 32px;
+        /* Decrease size of header */
     }
 
     h2 {
-        font-size: 18px; /* Decrease size of subheader */
+        font-size: 18px;
+        /* Decrease size of subheader */
     }
 
-    p, ul, li {
-        font-size: 18px; /* Decrease paragraph and list size */
+    p,
+    ul,
+    li {
+        font-size: 18px;
+        /* Decrease paragraph and list size */
     }
 
     /* Logo resizing */
@@ -239,9 +236,11 @@ main {
 
     /* Navigation Styling */
     nav ul {
-        display: none; /* Hide the horizontal navbar */
+        display: none;
+        /* Hide the horizontal navbar */
         position: absolute;
-        top: 70px; /* Adjust position of the vertical navbar */
+        top: 70px;
+        /* Adjust position of the vertical navbar */
         left: 0;
         width: 100%;
         background-color: var(--zinc-950);
@@ -255,7 +254,8 @@ main {
     }
 
     nav ul li .nav-item {
-        font-size: 16px; /* Adjust nav item font size */
+        font-size: 16px;
+        /* Adjust nav item font size */
         padding: 10px 20px;
     }
 
@@ -276,8 +276,9 @@ main {
     }
 
     /* Show the navigation vertically when the hamburger menu is clicked */
-    .menu-icon.active + ul {
-        display: flex; /* Show vertical menu */
+    .menu-icon.active+ul {
+        display: flex;
+        /* Show vertical menu */
     }
 
     /* Hide default nav items initially */
