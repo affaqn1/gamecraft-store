@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="Images/png" href="/Assets/LogoNew.png">
+    <title>Queries and FAQs Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="everything.css" />
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav>
+            <a href="home.html">
+                <img src="Assets/LogoNew.png" alt="logo" class="logo" />
+            </a>
+
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="upcominggames.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gamingperipherals.html">Gaming Peripherals</a>
+                <a href="games.html">Games</a>
+                <a href="queriesandfaqs.html">Queries & FAQ</a>
+            </div>
+        </nav>
+    </header>
+
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+
+                <div class="faq-columns">
+                    <!-- Left Column FAQs -->
+                    <div class="faq-column">
+                        <div class="faq-item">
+                            <label for="faq1" class="faq-question">What gaming consoles do you sell?</label>
+                            <div class="faq-answer">
+                                <p>We offer a wide range of consoles including PlayStation, Xbox, and Nintendo Switch. Check out our "Consoles" section for more information.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq2" class="faq-question">Do you sell video games for PC?</label>
+                            <div class="faq-answer">
+                                <p>Yes, we sell a variety of PC games. You can browse through our collection of PC games available in digital and physical formats.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq3" class="faq-question">Do you offer game downloads or digital keys?</label>
+                            <div class="faq-answer">
+                                <p>We offer both game downloads and digital keys for various platforms like Steam, PlayStation Store, Xbox Live, etc.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq4" class="faq-question">How can I pre-order upcoming games?</label>
+                            <div class="faq-answer">
+                                <p>You can pre-order upcoming games directly from our website. Simply find the game you're interested in and click "Pre-order" to reserve your copy.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq5" class="faq-question">Do you offer game bundles or discounts?</label>
+                            <div class="faq-answer">
+                                <p>Yes, we frequently offer game bundles and discounts on popular titles. Check our "Deals & Offers" section for the latest promotions.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq6" class="faq-question">Can I buy gaming peripherals like controllers or headsets?</label>
+                            <div class="faq-answer">
+                                <p>Absolutely! We offer a wide range of gaming peripherals, including controllers, headsets, keyboards, and gaming mice. Visit our "Gaming Peripherals" section to see all options.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column FAQs -->
+                    <div class="faq-column">
+                        <div class="faq-item">
+                            <label for="faq7" class="faq-question">Do you offer gift cards for gaming consoles?</label>
+                            <div class="faq-answer">
+                                <p>Yes, we offer gift cards for PlayStation, Xbox, and Nintendo consoles. They can be purchased online or at our stores.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq8" class="faq-question">What is your return policy for gaming hardware?</label>
+                            <div class="faq-answer">
+                                <p>We offer a 14-day return policy for gaming hardware like consoles, controllers, and headsets. The product must be in new, unopened condition.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq9" class="faq-question">How do I track my order?</label>
+                            <div class="faq-answer">
+                                <p>You can track your order by visiting the "Order Tracking" page and entering the tracking number provided in your confirmation email.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq10" class="faq-question">Do you sell used or pre-owned games?</label>
+                            <div class="faq-answer">
+                                <p>Yes, we offer pre-owned games at discounted prices. All pre-owned games are tested and guaranteed to work as expected.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq11" class="faq-question">Can I change my order after it’s placed?</label>
+                            <div class="faq-answer">
+                                <p>Orders can only be changed or cancelled within 24 hours of placement. After that, they are processed and shipped immediately.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <label for="faq12" class="faq-question">Do you offer discounts for bulk purchases?</label>
+                            <div class="faq-answer">
+                                <p>Yes, we offer discounts for bulk purchases. Please contact our sales department for more information about bulk pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ask a Question Section -->
+        <section class="ask-question-section">
+            <h2>Ask a Question</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="question" placeholder="Your Question" required></textarea>
+                <button type="submit">Submit Question</button>
+            </form>
+          </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Your Company | All Rights Reserved</p>
+        </footer>
+
+    </body>
+
+    </html>
