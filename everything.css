@@ -1289,7 +1289,7 @@ figcaption {
     color: #8b0f0f;
 }
 
-.description-lists {
+.description-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1297,7 +1297,7 @@ figcaption {
 }
 
 .description-leftt,
-.description-rightt {
+.description-right {
     width: 45%;
 }
 
@@ -1323,6 +1323,7 @@ figcaption {
     text-align: center;
 }
 
+/* Consoles Grid */
 .consoles-gridd {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1331,6 +1332,7 @@ figcaption {
     max-width: 900px;
     margin: 0 auto;
     margin-top: 30px;
+    overflow-x: hidden;
 }
 
 .image-itemm {
@@ -1363,7 +1365,7 @@ figcaption {
     transition: opacity 0.3s ease-in-out;
 }
 
-.image-itemm:hover .pricee:hover {
+.image-itemm:hover .pricee {
     opacity: 1;
 }
 
@@ -1371,7 +1373,7 @@ figcaption {
 footer p {
     background: #333;
     color: #686868;
-    padding: 20px;
+    padding: 10px;
     font-weight: lighter;
     font-size: medium;
 }
@@ -1398,7 +1400,7 @@ figcaption {
 
 /* Tablets */
 @media (max-width: 992px) {
-    .consoles-gridd {
+    .consoles-grid {
         width: 200%;
         max-width: 700px;
         grid-template-columns: repeat(2, 1fr);
@@ -1440,18 +1442,10 @@ figcaption {
 
     .description-itemm {
         margin-bottom: 50px;
-        margin-top: 10px;
     }
 
     .description-itemm h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-
-    .description-itemm p {
-        font-size: 12px;
-        color: #555;
-        text-align: center;
+        font-size: 17px;
     }
 
     .consoles-gridd img {
@@ -1466,11 +1460,10 @@ figcaption {
         align-items: center;
         text-align: center;
     }
-
     .pricee {
         opacity: 1;
         font-size: 14px;
-    }
+        }
 }
 
 /* Mobile phones */
@@ -1486,11 +1479,11 @@ figcaption {
     }
 
     .description-itemm h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .description-itemm p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .consoles-gridd img {
@@ -1498,7 +1491,7 @@ figcaption {
     }
 
     .pricee {
-        font-size: 13px;
+        font-size: 14px;
         padding: 4px 8px;
     }
 
@@ -1520,11 +1513,11 @@ figcaption {
     }
 
     .description-itemm h3 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .description-itemm p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .consoles-gridd img {
@@ -1532,7 +1525,7 @@ figcaption {
     }
 
     .pricee {
-        font-size: 12px;
+        font-size: 13px;
         padding: 3px 6px;
     }
 
@@ -1541,7 +1534,6 @@ figcaption {
         margin-bottom: 25px;
     }
 }
-
 
 
 
