@@ -1303,7 +1303,7 @@ figcaption {
 }
 
 .description-leftt,
-.description-right {
+.description-rightt {
     width: 45%;
 }
 
@@ -1406,7 +1406,7 @@ figcaption {
 
 /* Tablets */
 @media (max-width: 992px) {
-    .consoles-grid {
+    .consoles-gridd {
         width: 200%;
         max-width: 700px;
         grid-template-columns: repeat(2, 1fr);
