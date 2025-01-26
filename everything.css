@@ -1295,7 +1295,7 @@ figcaption {
     color: #8b0f0f;
 }
 
-.description-list {
+.description-lists {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
