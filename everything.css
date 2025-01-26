@@ -1016,6 +1016,7 @@ footer p {
 
 
 
+
 /* Base Styles */
 .descriptions {
     margin-bottom: 40px;
@@ -1172,7 +1173,7 @@ figcaption {
         width: 100%;
     }
 
-    .description-list {
+    .description-lists {
         margin-top: 40px;
     }
 
@@ -1201,6 +1202,10 @@ figcaption {
         align-items: center;
         text-align: center;
     }
+    .price {
+        opacity: 1;
+        font-size: 14px;
+        }
 }
 
 /* Mobile phones */
@@ -1271,6 +1276,7 @@ figcaption {
         margin-bottom: 25px;
     }
 }
+
 
 /*GAMING PERIPHERALS*/
 
