@@ -1015,8 +1015,6 @@ footer p {
 /* CONSOLES PAGE*/
 
 
-
-
 /* Base Styles */
 .descriptions {
     margin-bottom: 40px;
@@ -1093,6 +1091,7 @@ footer p {
     transform: scale(1.05);
 }
 
+/* Updated .price visibility for all devices */
 .price {
     position: absolute;
     bottom: 10px;
@@ -1103,12 +1102,13 @@ footer p {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
-    opacity: 0;
+    opacity: 1; /* Always visible */
     transition: opacity 0.3s ease-in-out;
 }
 
-.image-item:hover .price {
-    opacity: 1;
+.image-item:hover .price,
+.image-item:focus .price {
+    opacity: 1; /* Ensures hover or focus states display price */
 }
 
 /* Footer */
@@ -1202,10 +1202,11 @@ figcaption {
         align-items: center;
         text-align: center;
     }
+
     .price {
-        opacity: 1;
+        opacity: 1; /* Always visible on mobile */
         font-size: 14px;
-        }
+    }
 }
 
 /* Mobile phones */
@@ -1235,6 +1236,7 @@ figcaption {
     .price {
         font-size: 14px;
         padding: 4px 8px;
+        opacity: 1; /* Ensures price always shows */
     }
 
     figcaption {
@@ -1269,6 +1271,7 @@ figcaption {
     .price {
         font-size: 13px;
         padding: 3px 6px;
+        opacity: 1; /* Visible on small devices */
     }
 
     figcaption {
