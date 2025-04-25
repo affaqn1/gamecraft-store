@@ -2,7 +2,7 @@
     "processors": [
       { "name": "Intel i5", "price": 200, "image": "Assets/processors/i5.png" },
       { "name": "Intel i7", "price": 300, "image": "Assets/processors/i7.jpg" },
-      { "name": "Intel i9", "price": 400, "image": "Assets/processors/i99.png" },
+      { "name": "Intel i9", "price": 400, "image": "Assets/processors/i999.jpg" },
       { "name": "Ryzen 5", "price": 220, "image": "Assets/processors/R55.jpg" },
       { "name": "Ryzen 7", "price": 320, "image": "Assets/processors/r77.jpg" },
       { "name": "Ryzen 9", "price": 420, "image": "Assets/processors/r9.jpg" }
