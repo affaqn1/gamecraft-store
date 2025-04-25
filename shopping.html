@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Assets/LogoNew.png" />
+    <title>Shopping - Order Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="everything.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="Assets/LogoNew.png" alt="logo" class="logo" />
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+            <label for="menu-toggle" class="burger-menu">
+                <span></span><span></span><span></span>
+            </label>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="upcominggames.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gamingperipherals.html">Gaming Peripherals</a>
+                <a href="games.html">Games</a>
+                <a href="queriesandfaqs.html">Queries & FAQ</a>
+                <a href="shopping.html">Shopping</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1>Order Computer Parts</h1>
+
+        <!-- Product Sections Loaded from JSON -->
+        <div id="products"></div>
+
+        <!-- Cart Table -->
+        <h2>Cart</h2>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="totalPrice">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Control Buttons -->
+        <div class="buttons">
+            <button onclick="saveAsFavourite()">Add to Favourites</button>
+            <button onclick="applyFavourite()">Apply from Favourites</button>
+            <button onclick="goToCheckout()">Buy Now</button>
+        </div>
+
+        <script src="scripts/script.js"></script>
+</body>
+
+</html>

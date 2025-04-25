@@ -1,300 +1,141 @@
-/* Variables */
-:root {
-    --zinc-950: #09090b;
-    --zinc-900: #18181b;
-    --zinc-800: #27272a;
-    --zinc-700: #3f3f46;
-    --zinc-600: #52525b;
-    --zinc-500: #71717a;
-    --zinc-400: #a1a1aa;
-    --zinc-300: #d4d4d8;
-    --primary: #0cd498;
-    --primary-dark: #0bc18a;
-    --red: #ef233c;
-    --general-transition: all 200ms ease-out;
+.product-section {
+    margin: 2rem 0;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+.product-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
 }
 
-body {
-    font-family: "Inter", sans-serif;
-    background-color: var(--zinc-950);
-    color: white;
+.product-row::-webkit-scrollbar {
+    height: 8px;
 }
 
-h1 {
-    font-size: 44px;
-    font-weight: 800;
-    color: white;
-    margin: 20px 0;
-    text-transform: uppercase;
+.product-row::-webkit-scrollbar-thumb {
+    background-color: #490707;
+    border-radius: 10px;
 }
 
-h2 {
-    font-size: 24px;
+.product-card {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+    scroll-snap-align: start;
     text-align: center;
-    font-weight: 700;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* === Checkout Page Styles === */
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #9b9898;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(73, 7, 7, 0.1);
+}
+
+main h1,
+main h2 {
+    color: #490707;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #490707;
     color: white;
-    margin: 14px 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    transition: var(--general-transition);
-
+form button:hover {
+    background-color: #330505;
 }
 
-a:hover {
-    color: var(--primary);
+/* Order Summary Table */
+#orderSummary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
-/* scroll bar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--zinc-950);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--zinc-700);
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--zinc-600);
-}
-
-p,
-ul,
-li {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
+#orderSummary th,
+#orderSummary td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #ccc;
     text-align: left;
 }
 
-ol {
-    padding: 5px;
+#orderSummary th {
+    background-color: #490707;
+    color: white;
 }
 
-main {
-    min-height: 82vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .content-body {
-        width: 70%;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
+#orderSummary td strong {
+    color: #490707;
 }
 
-.logo {
-    width: 210px;
-    cursor: pointer;
-    margin: 30px 0;
+#confirmationMessage {
+    background-color: #e6f7ea;
+    border-left: 5px solid #490707;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
 }
 
-.menu-icon {
-    width: 25px;
-    cursor: pointer;
-}
-
-.pagefooter p {
-    font-size: 18px;
-}
-
-.pagefooter img {
-    width: 80px;
-    height: auto;
-    margin-right: 20px;
-}
-
-
-
-/* Navbar Styles (Global) */
-
-nav {
-    list-style-type: none;
-    margin: 0;
-    width: 100%;
-    padding: 0px 36px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    transition: var(--general-transition);
-    background-color: var(--zinc-950);
-}
-
-nav.scrolled {
-    padding: 16px 28px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-nav li {
-    display: inline-block;
-    padding-left: 4px;
-    padding-top: 0;
-}
-
-nav li .nav-item {
-    color: var(--zinc-300);
-    text-decoration: none;
-    padding: 12px 20px;
-    display: block;
-    border-radius: 15px;
-    transition: var(--general-transition);
-    text-decoration: none;
-    font-size: 14px;
-
-}
-
-nav li .nav-item:hover {
-    background-color: var(--zinc-900);
-}
-
-nav li .nav-item.active {
-    background-color: var(--primary);
-    font-weight: 600;
-    color: var(--zinc-950)
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-main {
-    width: 100%;
-    height: fit-content;
-    padding: 20px 44px;
-}
-
-
-/* Media Query for max-width 450px */
-@media (max-width: 450px) {
-
-    /* General Layout Adjustments */
-    body {
-        font-size: 16px;
-    }
-
+/* Responsive Design */
+@media (max-width: 600px) {
     main {
-        padding: 20px;
+        padding: 1rem;
+    }
+
+    form label {
+        font-size: 0.95rem;
+    }
+
+    form input {
+        font-size: 0.95rem;
+    }
+
+    form button {
         width: 100%;
-    }
-
-    .content-body {
-        width: 100%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 32px;
-        /* Decrease size of header */
-    }
-
-    h2 {
-        font-size: 18px;
-        /* Decrease size of subheader */
-    }
-
-    p,
-    ul,
-    li {
-        font-size: 18px;
-        /* Decrease paragraph and list size */
-    }
-
-    /* Logo resizing */
-    .logo {
-        width: 180px;
-        margin: 20px 0;
-    }
-
-    /* Navigation Styling */
-    nav ul {
-        display: none;
-        /* Hide the horizontal navbar */
-        position: absolute;
-        top: 70px;
-        /* Adjust position of the vertical navbar */
-        left: 0;
-        width: 100%;
-        background-color: var(--zinc-950);
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li .nav-item {
-        font-size: 16px;
-        /* Adjust nav item font size */
-        padding: 10px 20px;
-    }
-
-    nav.scrolled {
-        padding: 10px 20px;
-    }
-
-    /* Hamburger Icon */
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        z-index: 1000;
-    }
-
-    /* Show the hamburger menu when clicked */
-    nav.scrolled .menu-icon {
-        display: block;
-    }
-
-    /* Show the navigation vertically when the hamburger menu is clicked */
-    .menu-icon.active+ul {
-        display: flex;
-        /* Show vertical menu */
-    }
-
-    /* Hide default nav items initially */
-    nav ul {
-        display: none;
-    }
-
-    nav.scrolled ul {
-        display: block;
-    }
-
-    /* Footer */
-    .pagefooter {
-        padding: 12px 20px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 }

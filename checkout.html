@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="everything.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="Assets/LogoNew.png" alt="logo" class="logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="burger-menu">
+        <span></span><span></span><span></span>
+      </label>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="upcominggames.html">Upcoming Games</a>
+        <a href="consoles.html">Consoles</a>
+        <a href="gamingperipherals.html">Gaming Peripherals</a>
+        <a href="games.html">Games</a>
+        <a href="queriesandfaqs.html">Queries & FAQ</a>
+        <a href="shopping.html">Shopping</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Checkout Form -->
+  <main>
+    <h1>Checkout</h1>
+    <div id="orderSummary"></div>
+
+    <form id="checkoutForm">
+      <h2>Personal Details</h2>
+      <label>Full Name: <input type="text" name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+
+      <h2>Delivery Information</h2>
+      <label>Address: <input type="text" name="address" required></label><br>
+      <label>City: <input type="text" name="city" required></label><br>
+      <label>Postal Code: <input type="text" name="postal" required></label><br>
+
+      <h2>Payment Information</h2>
+      <label>Card Number: <input type="text" name="card" maxlength="16" required></label><br>
+      <label>Expiry Date: <input type="month" name="expiry" required></label><br>
+      <label>CVV: <input type="text" name="cvv" maxlength="3" required></label><br>
+
+      <br>
+      <button type="submit">Pay</button>
+    </form>
+
+    <div id="confirmationMessage" style="display: none; margin-top: 20px;"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/checkout.js"></script>
+</body>
+</html>
