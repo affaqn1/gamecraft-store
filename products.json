@@ -1,11 +1,11 @@
 {
     "processors": [
       { "name": "Intel i5", "price": 200, "image": "Assets/processors/i5.png" },
-      { "name": "Intel i7", "price": 300, "image": "Assets/Processors/i7.jpg" },
-      { "name": "Intel i9", "price": 400, "image": "Assets/Processors/i9.webp" },
-      { "name": "Ryzen 5", "price": 220, "image": "Assets/Processors/r5.webp" },
-      { "name": "Ryzen 7", "price": 320, "image": "Assets/Processors/r77.jpg" },
-      { "name": "Ryzen 9", "price": 420, "image": "Assets/Processors/r9.jpg" }
+      { "name": "Intel i7", "price": 300, "image": "Assets/Processors/i7.JPG" },
+      { "name": "Intel i9", "price": 400, "image": "Assets/Processors/i99.PNG" },
+      { "name": "Ryzen 5", "price": 220, "image": "Assets/Processors/R55.JPG" },
+      { "name": "Ryzen 7", "price": 320, "image": "Assets/Processors/r77.JPG" },
+      { "name": "Ryzen 9", "price": 420, "image": "Assets/Processors/r9.JPG" }
     ],
     "graphics card": [
       { "name": "NVIDIA RTX 3060", "price": 350, "image": "Assets/graphics/r12.jpg" },
@@ -17,24 +17,24 @@
     ],
     "motherboards": [
       { "name": "ASUS ROG Strix Z790", "price": 250, "image": "Assets/motherboards/m1" },
-      { "name": "MSI MPG B550", "price": 180, "image": "Assets/Motherboards/m2.jpg" },
-      { "name": "Gigabyte X570 AORUS", "price": 220, "image": "Assets/Motherboards/m3.png" },
-      { "name": "ASRock B450M Pro4", "price": 110, "image": "Assets/Motherboards/m4.png" },
-      { "name": "ASUS Prime B660M", "price": 150, "image": "Assets/Motherboards/m5.png" },
-      { "name": "MSI MAG B650", "price": 200, "image": "Assets/Motherboards/m6.jpg" }
+      { "name": "MSI MPG B550", "price": 180, "image": "Assets/Motherboards/m2.JPG" },
+      { "name": "Gigabyte X570 AORUS", "price": 220, "image": "Assets/Motherboards/m3.PNG" },
+      { "name": "ASRock B450M Pro4", "price": 110, "image": "Assets/Motherboards/m4.PNG" },
+      { "name": "ASUS Prime B660M", "price": 150, "image": "Assets/Motherboards/m5.PNG" },
+      { "name": "MSI MAG B650", "price": 200, "image": "Assets/Motherboards/m6.JPG" }
     ],
     "memory": [
-      { "name": "Corsair Vengeance 16GB", "price": 70, "image": "Assets/Memory/m1.png" },
-      { "name": "G.Skill Ripjaws 16GB", "price": 65, "image": "Assets/Memory/m2.jpg" },
-      { "name": "Kingston Fury 32GB", "price": 120, "image": "Assets/Memory/m3.jpg" },
-      { "name": "TeamGroup T-Force 16GB", "price": 60, "image": "Assets/Memory/m4.jpg" }
+      { "name": "Corsair Vengeance 16GB", "price": 70, "image": "Assets/Memory/m1.PNG" },
+      { "name": "G.Skill Ripjaws 16GB", "price": 65, "image": "Assets/Memory/m2.JPG" },
+      { "name": "Kingston Fury 32GB", "price": 120, "image": "Assets/Memory/m3.JPG" },
+      { "name": "TeamGroup T-Force 16GB", "price": 60, "image": "Assets/Memory/m4.JPG" }
     ],
     "storage": [
-      { "name": "Samsung 970 EVO 1TB SSD", "price": 130, "image": "Assets/Storage/s11" },
-      { "name": "WD Black SN850 1TB SSD", "price": 150, "image": "Assets/Storage/s2" },
-      { "name": "Crucial MX500 500GB SSD", "price": 60, "image": "Assets/Storage/s3.jpg" },
-      { "name": "Seagate Barracuda 2TB HDD", "price": 55, "image": "Assets/Storage/s4" },
-      { "name": "Toshiba X300 4TB HDD", "price": 100, "image": "Assets/Storage/s5" },
-      { "name": "Kingston NV2 1TB NVMe", "price": 90, "image": "Assets/Storage/s6.png" }
+      { "name": "Samsung 970 EVO 1TB SSD", "price": 130, "image": "Assets/Storage/1.JPG" },
+      { "name": "WD Black SN850 1TB SSD", "price": 150, "image": "Assets/Storage/2.JPG" },
+      { "name": "Crucial MX500 500GB SSD", "price": 60, "image": "Assets/Storage/s3.JPG" },
+      { "name": "Seagate Barracuda 2TB HDD", "price": 55, "image": "Assets/Storage/4.JPG" },
+      { "name": "Toshiba X300 4TB HDD", "price": 100, "image": "Assets/Storage/5.PNG" },
+      { "name": "Kingston NV2 1TB NVMe", "price": 90, "image": "Assets/Storage/s6.PNG" }
     ]
   }
